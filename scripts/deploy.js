@@ -17,13 +17,7 @@ async function main () {
     console.log('TestContract deployed to:', testcontractDeployed.target);
 
     //interact with contract
-    let value = await testcontractDeployed.value();
-    console.log('Value is ', value.toString());
-    let setValue = await testcontractDeployed.setValue(10); 
-    let receipt = await setValue.wait();
-    console.log('Transaction receipt:', receipt);
-    value = await testcontractDeployed.value();
-    console.log('Value is ', value.toString());
+    
 
 
 }
